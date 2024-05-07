@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture</title>
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="./Css/furniture.css" />
+    <!-- Main JavaScript File -->
+    <script src="main.js"></script>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="./Css/normlize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="./Css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo"><a href="#">Furniture</a></div>
+        <div class="links">
+          <a class="bars-icon" href=""><i class="fa-solid fa-bars"></i></a>
+          <ul class="nav-menu">
+            <li><a href="#home">home</a></li>
+            <li><a href="#articales">Articales</a></li>
+            <li id="parent-hidden-list">
+              <a href="#services">services</a>
+              <ul id="hidden-list">
+                <li><a href="#">Floor Planner</a></li>
+                <li><a href="#">Living & bedroom Design Design</a></li>
+                <li><a href="#">3D Lighting Design</a></li>
+              </ul>
+            </li>
+            <li><a href="#products">products</a></li>
+            <li id="parent-hidden-list">
+              <a href="#inspiration">inspiration</a>
+              <ul id="hidden-list">
+                <li><a href="#">Design Community</a></li>
+                <li><a href="#">Design Challenge</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#Login">Login</a>
+              <div class="login-form">
+                <h1>Log in</h1>
+                <form action="" method="">
+                  <label
+                    >User Email:
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="Enter Your Email"
+                    />
+                  </label>
+                  <label
+                    >Passowrd:
+                    <input type="password" placeholder="Enter Your Password" />
+                  </label>
+                </form>
+                <div class="login-buttons">
+                  <input
+                    type="submit"
+                    value="Submit"
+                    onclick="return validateEmail(document.getElementById('email').value)"
+                  />
+                  <a style="color: white" href="/index4.php">Sign Up</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Landing -->
+    <div class="landing" id="home">
+      <div class="container">
+        <div class="text">
+          <span>New Arrival</span>
+          <h1>
+            Discover Our<br />
+            New collection
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis.
+          </p>
+          <a href="#browes-the-range" id="buy-now">Buy Now</a>
+        </div>
+      </div>
+      <div class="our-services">
+        <div class="box">
+          <div class="img">
+            <img src="./Css/imgs/landiding_vector1.png" alt="" />
+          </div>
+          <div class="text">
+            <h2>Free Delivery</h2>
+            <span>Lorem ipsum dolor sit amet.</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./Css/imgs/landiding_icon2.png" alt="" />
+          </div>
+          <div class="text">
+            <h2>Support 24/7</h2>
+            <span>Lorem ipsum dolor sit amet.</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./Css/imgs/landiding_icon3.png" alt="" />
+          </div>
+          <div class="text">
+            <h2>100% Authentic</h2>
+            <span>Lorem ipsum dolor sit amet.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing -->
+    <!-- Start Inspiration -->
+    <div class="inspiration">
+      <div class="container" id="inspiration">
+        <div class="title">
+          <h1 class="heading">Inspiration Collection</h1>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        </div>
+        <div class="collection">
+          <div class="img">
+            <img src="./Css/imgs/inspiration01.png" alt="" />
+          </div>
+          <div class="img">
+            <img src="./Css/imgs/inspiration02.png" alt="" />
+          </div>
+          <div class="img">
+            <img src="./Css/imgs/inspiration03.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End  Inspiration -->
+    <!-- Start Beautify -->
+    <div class="beautify" id="articales">
+      <div class="container">
+        <div class="articals">
+          <div class="text">
+            <h2>Beautify Your Space</h2>
+            <p>
+              Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+            <a href="/index2.html">Learn More</a>
+          </div>
+          <div class="text">
+            <h2>Standard Sizes For Various Furniture</h2>
+            <p>
+              Do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="/index5.html">Learn More</a>
+          </div>
+        </div>
+        <div class="img">
+          <img src="./Css/imgs/beautify.png" alt="" height="550px" />
+        </div>
+      </div>
+    </div>
+    <!-- End Beautify -->
+    <!-- Start Browes The Range -->
+    <div class="browes" id="products">
+      <div class="container">
+        <div class="title">
+          <h1 class="heading">Browese The Range</h1>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        </div>
+        <div class="content">
+          <div class="box">
+            <a href=""><img src="./Css/imgs/Browes1.png" alt="" /></a>
+            <a href=""> <p>Dining</p></a>
+          </div>
+          <div class="box">
+            <a href="/index3.html"
+              ><img src="./Css/imgs/Browes2.png" alt=""
+            /></a>
+            <a href="/index3.html"> <p>Living</p></a>
+          </div>
+          <div class="box">
+            <a href=""> <img src="./Css/imgs/Browes3.png" alt="" /></a>
+            <a href=""><p>Bedroom</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Browes The Range -->
+    <!-- Start How It Works -->
+    <div class="works" id="services">
+      <div class="container">
+        <div class="title">
+          <h1 class="heading">Start How It Works</h1>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        </div>
+        <div class="content">
+          <div class="box">
+            <a href="">
+              <div class="img"><img src="./Css/imgs/Works1.png" alt="" /></div
+            ></a>
+            <div class="text">
+              <a href=""><h3>Floor Planner</h3></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="">
+              <div class="img"><img src="./Css/imgs/Works2.png" alt="" /></div
+            ></a>
+            <div class="text">
+              <a href=""> <h3>3D Lighting Design</h3></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="">
+              <div class="img"><img src="./Css/imgs/Works3.png" alt="" /></div
+            ></a>
+            <div class="text">
+              <a href=""><h3>Living & bedroom Design</h3></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End How It Works -->
+    <!-- Start Our Mailing List -->
+    <div class="mailing">
+      <div class="container">
+        <div class="heading2">
+          <h1>Join Our Mailing List</h1>
+          <span
+            >Sign up to receive inspiration, product updates, and special offers
+            from our team.</span
+          >
+        </div>
+        <div class="form">
+          <input type="email" placeholder="example@gmail.com" />
+          <button>Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Mailing List -->
+    <!-- Start Bottom Section -->
+    <footer>
+      <div class="container">
+        <div class="left-col">
+          <div class="beauty-div">
+            <h3>Furniture Store</h3>
+            <p>
+              Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+          </div>
+          <div class="social-div">
+            <a href=""> <h3>Follow Us</h3></a>
+          </div>
+        </div>
+        <div class="right-col">
+          <a href=""> <h3>Instagram Shop</h3></a>
+          <a href="">
+            <div class="gallery">
+              <img src="./Css/imgs/Instagram-shop1.jpg" alt="" />
+              <img src="./Css/imgs/Instagram-shop2.jpg" alt="" />
+              <img src="./Css/imgs/Instagram-shop3.jpg" alt="" />
+              <img src="./Css/imgs/Instagram-shop4.jpg" alt="" /></div
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Bottom Section -->
+    <script type="text/javascript" src="/main.js"></script>
+  </body>
+</html>
